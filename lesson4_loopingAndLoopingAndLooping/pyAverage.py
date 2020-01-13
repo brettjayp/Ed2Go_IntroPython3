@@ -3,7 +3,7 @@ print('Here\'s a small program to calculate an average.\nIt will request the use
 length = eval(input('How many variables would you like to input to get an average of?'))
 agg = 0
 
-for i in range(0, length):
+for i in range(length):
   agg = agg + eval(input('Enter next input:  '))
 
 avg = agg / length
