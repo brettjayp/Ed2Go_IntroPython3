@@ -3,9 +3,11 @@ def try_ages():
   for letter in range(len(alphabet)):
     try:
       age = eval(f'10{alphabet[letter]}')
+      # age = int(age)
       ten_years = age + 10
       print(f'{alphabet[letter]} : age in 10 years is {ten_years}')
     # except Exception:
+    # except (NameError, SyntaxError, TypeError):
     except (NameError, SyntaxError):
       print(f'{alphabet[letter]} : fails')
 
